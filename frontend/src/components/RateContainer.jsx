@@ -1,20 +1,36 @@
 import React from "react";
 import "../App.css";
 
-function RateContainer(props) {
-  const bankName = props.bankName;
-  const product = props.product;
-  const apy = props.apy;
-  const earning = props.earning;
-
+function RateContainer({
+  id,
+  loanAmount,
+  purpose,
+  term,
+  yield: yieldRate,
+  probabilityOfDefault,
+}) {
   return (
     <div className="rateContainer">
-      <div className="inner-container">{bankName}</div>
-      <div className="inner-container">{product}</div>
-      <div className="inner-container">{apy}</div>
-      <div className="inner-container">${earning}</div>
-      <div className="inner-container">
-        <button className="save">Save now</button>
+      <div className="rateItem">
+        <div className="item-container">
+          <span className="label">Loan Id:</span> {id}
+        </div>
+        <div className="item-container">
+          <span className="label">Amount:</span> {loanAmount.toLocaleString()}
+        </div>
+        <div className="item-container">
+          <span className="label">Purpose:</span> {purpose}
+        </div>
+        <div className="item-container">
+          <span className="label">Loan Term:</span> {term}
+        </div>
+        <div className="item-container">
+          <span className="label">Yield:</span> {yieldRate}%
+        </div>
+        <div className="item-container">
+          <span className="label">Default Probability:</span>
+          {probabilityOfDefault}
+        </div>
       </div>
     </div>
   );

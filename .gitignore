@@ -1,0 +1,29 @@
+# Firebase CLI files
+.firebase/
+frontend/.firebase/
+
+# Firebase service keys or sensitive zips (if any)
+Model Artifacts.zip
+saved_model_artifacts/
+
+# Firebase local settings
+frontend/.firebaserc
+frontend/dist/
+frontend/node_modules/
+
+
+
+# Env files
+.env
+.env.*.local
+
+# Model or saved ML files (optional but recommended)
+*.h5
+*.pkl
+*.pt
+*.onnx
+*.tflite
+
+# System junk (if not already there)
+.DS_Store
+Thumbs.db
