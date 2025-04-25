@@ -312,7 +312,7 @@ function App() {
 
   return (
     <div className="app">
-      <h1 className="title">Loan Rates</h1>
+      <h1 className="title">Loan Risk Assessment</h1>
 
       {/* Desktop Header */}
       <div className="rateHeader desktop-only">

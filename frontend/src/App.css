@@ -52,7 +52,7 @@ h1 {
   font-size: 1.1rem;
   color: var(--text-primary);
   font-weight: 500;
-  color: #427af2;
+  color: black;
 }
 
 .deposit-input input {
@@ -84,7 +84,7 @@ h1 {
   background-color: var(--card-background);
   border-radius: 0.5rem;
   box-shadow: var(--shadow-sm);
-  color: #427af2;
+  color: black;
 }
 
 .rateContainer {
@@ -111,7 +111,7 @@ h1 {
 }
 
 .label {
-  color: #427af2;
+  color: black;
 }
 
 .save {
@@ -155,9 +155,7 @@ h1 {
     justify-content: flex-start; /* Align content to the left */
   }
 
-  .label {
-    margin-right: 10px;
-  }
+
 
   .deposit-input {
     flex-direction: column;
@@ -290,5 +288,5 @@ h1 {
   font-size: 2.5rem;
   font-weight: 700;
   text-align: center;
-  color: #427af2;
+  color: black;
 }

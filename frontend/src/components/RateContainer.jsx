@@ -16,7 +16,7 @@ function RateContainer({
           <span className="label">Loan Id:</span> {id}
         </div>
         <div className="item-container">
-          <span className="label">Amount:</span> {loanAmount.toLocaleString()}
+          <span className="label">Amount:</span>${loanAmount.toLocaleString()}
         </div>
         <div className="item-container">
           <span className="label">Purpose:</span> {purpose}
