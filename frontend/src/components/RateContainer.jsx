@@ -9,6 +9,10 @@ function RateContainer({
   yield: yieldRate,
   probabilityOfDefault,
 }) {
+  const formatProbability = (probability) => {
+    return `${(probability * 100).toFixed(2)}%`;
+  };
+
   return (
     <div className="rateContainer">
       <div className="rateItem">
@@ -22,14 +26,14 @@ function RateContainer({
           <span className="label">Purpose:</span> {purpose}
         </div>
         <div className="item-container">
-          <span className="label">Loan Term:</span> {term}
+          <span className="label">Loan Term:</span> {term} months
         </div>
         <div className="item-container">
           <span className="label">Yield:</span> {yieldRate}%
         </div>
         <div className="item-container">
           <span className="label">Default Probability:</span>
-          {probabilityOfDefault}
+          {formatProbability(probabilityOfDefault)}
         </div>
       </div>
     </div>
